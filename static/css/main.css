@@ -1,48 +1,129 @@
-body {
-    font-family: 'Roboto', sans-serif;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-h1, h2, h4 {
-    color: teal;
+label {
+    font-size: 2rem;
     text-align: center;
 }
 
-.container {
-    margin: 0 auto;
+.sublabel {
+    text-align: center;
 }
 
-.input-form {
-    color: teal;
-    margin: 0 auto;
-}
+/*
+ * Style the pure-g container like divs
+ */
 
-.sub-form {
+.pure-g {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0rem;
 }
 
-.label {
-    font-size: 1.25rem;
+@media (min-width: 768px) {
+    .pure-g {
+        width: 750px;
+    }
 }
 
-form {
-    margin: auto;
-    width: 50vw;
+@media (min-width: 992px) {
+    .pure-g {
+        width: 970px;
+    }
 }
 
-button {
-    margin: 0 auto;
-    /* text-align: center; */
+@media (min-width: 1200px) {
+    .pure-g {
+        width: 1170px;
+    }
 }
 
-.answer-box {
-    margin: auto;
-    width: 50vw;
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+
+.pure-form label {
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 100%;
 }
 
-.answer-par {
+.pure-form input[type] {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.home-menu {
+    padding: 1.5em;
     text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
 }
 
-.label {
-    text-align: center;
+.home-menu {
+    background: darkcyan;
+}
+
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+/*
+ * Button Class
+ */
+
+.pure-button {
+    background-color: darkcyan;
+    margin-top: 1rem;
+}
+
+/*
+ * Answer class
+ */
+
+.answer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
 }

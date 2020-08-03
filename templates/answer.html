@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANSWERING MACHINE</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-</head>
-
-<body>
-<div class="answer-box">
-    <h2>Your input text</h2>
-    <p class="answer-par">{{ text }}</p>
-</div>
-<div class="answer-box">
-    <h2>Your question</h2>
-    <p class="answer-par">{{ question }}</p>
-</div>
-<div class="answer-box">
-    <h2>Answering machine said</h2>
-    <p class="answer-par">{{ answer }}</p>
-</div>
-</body>
-
-</html>
+{% extends "base.html" %}
+{% block content %}
+    <div class="pure-g">
+        <div>
+            <h1>Your input text:</h1>
+            <p>{{ text }}</p>
+        </div>
+        <div class="pure-u-1">
+            <h1>Your question:</h1>
+            <p>{{ question }}</p>
+        </div>
+        <div class="pure-u-1">
+            <h1>Answering Machine Said:</h1>
+            <p class="answer">{{ answer }}</p>
+        </div>
+    </div>
+{% endblock %}
