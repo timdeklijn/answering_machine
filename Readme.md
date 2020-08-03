@@ -42,7 +42,7 @@ python app.py
 ## TODO
 
 - [x] Make command to download the model
-- [ ] Move downloaded model to correct folder
+- [x] Move downloaded model to correct folder
 - [ ] Make mounting of model not hardcoded
 - [ ] Containerize the web-app
   - [ ] Create a docker-compose file to spin up the whole app

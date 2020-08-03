@@ -6,6 +6,8 @@ model/
 
 # Experimentation notebook checkpoints
 .ipynb_checkpoints/
+# pycache
+__pycache__/
 
 # Editor specific
 .vscode/
