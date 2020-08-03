@@ -1,0 +1,6 @@
+venv/
+model/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.iml

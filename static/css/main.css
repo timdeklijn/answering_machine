@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h4 {
+    color: teal;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.input-form {
+    color: teal;
+    margin: 0 auto;
+}
+
+.sub-form {
+    margin-top: 2rem;
+}
+
+.label {
+    font-size: 1.25rem;
+}
+
+form {
+    margin: auto;
+    width: 50vw;
+}
+
+button {
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.answer-box {
+    margin: auto;
+    width: 50vw;
+}
+
+.answer-par {
+    text-align: center;
+}
+
+.label {
+    text-align: center;
+}
