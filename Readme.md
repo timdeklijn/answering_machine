@@ -1,6 +1,6 @@
 # Answering Machine
 
-A web app around a [Q&A BERT model](https://tfhub.dev/see--/bert-uncased-tf2-qa/1). This app is mostly written
+A web-app around a [Q&A BERT model](https://tfhub.dev/see--/bert-uncased-tf2-qa/1). This app is mostly written
 to practice with [TF Serving](https://www.tensorflow.org/tfx/guide/serving) and NLP models.
 
 ## Installation
@@ -39,9 +39,12 @@ The web-app that communicates with the container through API calls is started wi
 python app.py
 ```
 
-
 ## TODO
 
-- [ ] Make command to download the model
+- [x] Make command to download the model
+- [ ] Move downloaded model to correct folder
+- [ ] Make mounting of model not hardcoded
+- [ ] Containerize the web-app
+  - [ ] Create a docker-compose file to spin up the whole app
 - [ ] Scrape a website instead of copy/pasting the text
 - [ ] Shorten text by removing stop words - use something like `spacy`

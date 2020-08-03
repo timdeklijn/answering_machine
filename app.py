@@ -42,7 +42,7 @@ def answer():
 
     Returns
     -------
-    Renders the output.html page which containst the input text, input question and
+    Renders the output.html page which contains the input text, input question and
     the answer from the model.
     """
     # Process form

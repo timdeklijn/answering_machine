@@ -6,5 +6,7 @@ docker_run:
 	-e MODEL_NAME=bert_qa \
 	-t tensorflow/serving
 
+# Download the model and save it in the folder 'model/1/'. This is important because we use the
+# absolute path to mount the model to the tenserflow/serving container.
 download_model:
-	curl https://tfhub.dev/see--/bert-uncased-tf2-qa/1 --output model/2/
+	wget -O tst https://tfhub.dev/see--/bert-uncased-tf2-qa/1?tf-hub-format=compressed
