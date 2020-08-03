@@ -10,33 +10,33 @@
 </head>
 
 <body>
-    <div class="container">
-        <div>
-            <h1>ANSWERING MACHINE</h1>
-        </div>
-        <div>
-            <form method="POST" action="/answer" class="input-form">
-                {{ form.hidden_tag() }}
-                <div class="sub-form">
-                    <div class="label">
-                        {{ form.text.label }}
-                    </div>
-                    <div class="field">
-                        {{ form.text(cols=80, rows=50) }}
-                    </div>
-                </div>
-                <div class="sub-form">
-                    <div class="label">
-                        {{ form.question.label }}
-                    </div>
-                    <div class="field">
-                        {{ form.question(cols=80, rows=5) }}
-                    </div>
-                </div>
-                <input type="submit" value="Answer me">
-            </form>
-        </div>
+<div class="container">
+    <div>
+        <h1>ANSWERING MACHINE</h1>
     </div>
+    <div>
+        <form method="POST" action="/answer" class="input-form">
+            {{ form.hidden_tag() }}
+            <div class="sub-form">
+                <div class="label">
+                    {{ form.text.label }}
+                </div>
+                <div class="field">
+                    {{ form.text(cols=80, rows=50) }}
+                </div>
+            </div>
+            <div class="sub-form">
+                <div class="label">
+                    {{ form.question.label }}
+                </div>
+                <div class="field">
+                    {{ form.question(cols=80, rows=5) }}
+                </div>
+            </div>
+            <input type="submit" value="Answer me">
+        </form>
+    </div>
+</div>
 </body>
 
 </html>

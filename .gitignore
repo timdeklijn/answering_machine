@@ -1,6 +1,13 @@
+# Virtual environments python
 venv/
+
+# Model should not be in the repo
 model/
+
+# Experimentation notebook checkpoints
 .ipynb_checkpoints/
+
+# Editor specific
 .vscode/
 .idea/
 *.iml
